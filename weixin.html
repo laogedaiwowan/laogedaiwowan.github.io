@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="/static/index/wx/css/weui.css"/>
+    <link rel="stylesheet" href="/static/index/wx/css/weuix.css"/>
+
+      <script src="/static/index/wx/js/zepto.min.js"></script>
+    <script src="/static/index/wx/js/zepto.weui.js"></script>
+    
+    <script>
+        $(function(){
+
+
+            $(document).on("click", "#showToast", function() {
+                $.toast();
+
+             
+                $.toast("复制成功", function() {
+                    console.log("cancel");
+                });
+               
+
+
+            });
+
+        });
+
+    </script>
+</head>
+
+
+<div class="weui-cells" style="margin-top: 400px;">
+ 
+ 
+        <div class="weui-cell__ft"></div>
+    </div>
+    <div style="height: 50px;background: #f7f7f7;"> <div align="center"><img src="weixin.png" style="width: 65px;border-right: 9px;"></div>
+      <div class="weui-cell weui-cell_access" onclick="copyUrl2()" type="button">
+        <div class="weui-cell__bd" style="text-align: center;" id="showToast">
+            <span style="vertical-align: middle"><font color=#507fcc ><b>点我复制微信号添加到通讯录</span></font>
+        </div>
+       
+    </div>
+
+    
+</div>
+<style type="text/css">.weui-grid:before{border:0px;}.weui-grid:after{border: 0px;}.weui-grid__icon {
+    width: 69px;
+    height: 69px;
+}.weui-grid__icon img{border-radius: .4em}.weui-cell__bd{font-size:18px;line-height: 1.97058824;}</style>
+<div class="weui-grids">
+    <a href="javascript:;" class="weui-grid js_grid">
+        <div class="weui-grid__icon" id="showToast"onclick="copyUrl3()" type="button">
+            <img src="" alt=""border-right: .4em>
+        </div>
+        <p class="weui-grid__label">
+                    </p>
+    </a>
+    <a href="javascript:;" class="weui-grid js_grid">
+        <div class="weui-grid__icon" id="showToast"onclick="copyUrl4()" type="button">
+            <img src="" alt="">
+        </div>
+        <p class="weui-grid__label">
+                     </p>
+    </a>
+    <a href="javascript:;" class="weui-grid js_grid">
+        <div class="weui-grid__icon" id="showToast"onclick="copyUrl5()" type="button">
+            <img src="" alt="">
+        </div>
+        <p class="weui-grid__label">
+                     </p>
+    </a>
+    </b>
+</div>
+
+<br>
+<br>
+<div class="weui-footer weui-footer_fixed-bottom">
+    <p class="weui-footer__links">
+    </p>
+    <p class="weui-footer__text"> </p>
+</div>
+<div cols="20" id="biao1" style="color: #f7f7f7">13839816672</div>
+<div cols="20" id="biao2" style="color: #f7f7f7"></div>
+<div cols="20" id="biao3" style="color: #f7f7f7"></div>
+<div cols="20" id="biao4" style="color: #f7f7f7"></div><!--微信这里-->
+
+      <script type="text/javascript">
+      function copyUrl2()
+            {
+                var Url2=document.getElementById("biao1").innerText;
+                var oInput = document.createElement('input');
+                oInput.value = Url2;
+                document.body.appendChild(oInput);
+                oInput.select(); // 选择对象
+                document.execCommand("Copy"); // 执行浏览器复制命令
+                oInput.className = 'oInput';
+                oInput.style.display='none';
+               
+                window.location.href="weixin://";//打开微信
+            }
+            function copyUrl3()
+            {
+                var Url2=document.getElementById("biao2").innerText;
+                var oInput = document.createElement('input');
+                oInput.value = Url2;
+                document.body.appendChild(oInput);
+                oInput.select(); // 选择对象
+                document.execCommand("Copy"); // 执行浏览器复制命令
+                oInput.className = 'oInput';
+                oInput.style.display='none';
+               
+                window.location.href="weixin://";//打开微信
+            }
+            function copyUrl4()
+            {
+                var Url2=document.getElementById("biao3").innerText;
+                var oInput = document.createElement('input');
+                oInput.value = Url2;
+                document.body.appendChild(oInput);
+                oInput.select(); // 选择对象
+                document.execCommand("Copy"); // 执行浏览器复制命令
+                oInput.className = 'oInput';
+                oInput.style.display='none';
+               
+                window.location.href="weixin://";//打开微信
+            }
+            function copyUrl5()
+            {
+                var Url2=document.getElementById("biao4").innerText;
+                var oInput = document.createElement('input');
+                oInput.value = Url2;
+                document.body.appendChild(oInput);
+                oInput.select(); // 选择对象
+                document.execCommand("Copy"); // 执行浏览器复制命令
+                oInput.className = 'oInput';
+                oInput.style.display='none';
+               
+                window.location.href="weixin://";//打开微信
+            }
+      </script>
+    
+
+</body>
+</html>
